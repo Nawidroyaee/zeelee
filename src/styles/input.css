@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@layer base {
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Playfair Display", serif;
+  }
+
+  body {
+    font-family: "Inter", system-ui, sans-serif;
+  }
+}
+@layer components {
+  .nav-link {
+    @apply text-gray-400 hover:text-green-700 hover:bg-green-50 px-5 py-2 transition rounded-md;
+  }
+
+  .page-home .nav-home,
+  .page-menu .nav-menu,
+  .page-about .nav-about {
+    @apply text-green-800 font-semibold;
+  }
+}
