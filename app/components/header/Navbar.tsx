@@ -4,6 +4,7 @@ import Image from "next/image";
 import { useEffect, useState } from "react";
 import { IconMenu3 } from "@tabler/icons-react";
 import NavbarItems from "@/app/components/header/NavbarItems";
+import MobileNavbar from "@/app/components/header/MobileNavbar";
 
 export default function Navbar() {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -46,7 +47,7 @@ export default function Navbar() {
       } bg-white backdrop-blur py-2 md:py-4`}
     >
       <div className="mx-auto flex max-w-7xl items-center px-4 justify-between">
-        <div id="home" className="flex items-center">
+        <div className="flex items-center">
           <Image
             src="/logo.png"
             alt="Zeelee Logo"
@@ -62,7 +63,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <a
             href="#menu"
-            className="rounded-full bg-green-700 px-5 py-2 text-white font-bold hover:bg-green-600 transition"
+            className="rounded-full bg-green-500 px-5 py-2 text-white font-bold hover:bg-green-600 transition"
           >
             Order Now
           </a>
@@ -77,34 +78,7 @@ export default function Navbar() {
         </button>
       </div>
 
-      <div
-        className={`py-5 absolute ${openDrawer ? "right-0" : "-right-72"} top-0 md:hidden bg-white h-dvh w-72 z-50 transition-all duration-300 flex flex-col justify-between items-center`}
-      >
-        <h3 className="text-center font-bold text-3xl text-green-800 font-heading">
-          Zeelee
-        </h3>
-
-        <div className="flex flex-col gap-4 items-center">
-          <a onClick={() => setOpenDrawer(!openDrawer)} href={"#home"}>
-            Home
-          </a>
-          <a onClick={() => setOpenDrawer(!openDrawer)} href={"#menu"}>
-            Menu
-          </a>
-          <a onClick={() => setOpenDrawer(!openDrawer)} href={"#contact"}>
-            Contact
-          </a>
-        </div>
-
-        <p className="text-center text-xs">Zeelee | All rights reserved</p>
-      </div>
-
-      {openDrawer && (
-        <div
-          onClick={() => setOpenDrawer(!openDrawer)}
-          className={`absolute top-0 right-0 z-40 w-full h-dvh bg-black opacity-50`}
-        ></div>
-      )}
+      <MobileNavbar openDrawer={openDrawer} setOpenDrawer={setOpenDrawer} />
     </header>
   );
 }

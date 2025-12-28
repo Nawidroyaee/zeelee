@@ -11,7 +11,7 @@ export default function NavbarItems() {
         <a
           key={i}
           href={item.href}
-          className="px-4 py-2 rounded-md hover:text-green-800 hover:font-semibold hover:bg-green-100 transition-all duration-200"
+          className="px-4 py-2 rounded-full hover:text-green-500 hover:font-semibold hover:bg-green-50 transition-all duration-200"
         >
           {item.title}
         </a>
