@@ -5,11 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5526dd6c-e8cb-494d-aac1-7d788a0dfe63" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/app/components/header/MobileNavbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/components/sections/HeroSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/sections/menu/MenuSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/components/sections/menu/menuCards/MainCard.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/header/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/header/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/components/header/NavbarItems.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/header/NavbarItems.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/components/sections/HeroSection.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/components/sections/HeroSection.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -18,7 +17,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="EmbeddingIndexingInfo">
-    <option name="cachedIndexableFilesCount" value="27" />
+    <option name="cachedIndexableFilesCount" value="32" />
     <option name="fileBasedEmbeddingIndicesEnabled" value="true" />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -58,7 +57,7 @@
     &quot;js.debugger.nextJs.config.created.client&quot;: &quot;true&quot;,
     &quot;js.debugger.nextJs.config.created.server&quot;: &quot;true&quot;,
     &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/hashem/Desktop/zeelee&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/hashem/Desktop/durreen/api-crm&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
@@ -75,6 +74,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/components/sections/menu" />
       <recent name="$PROJECT_DIR$/app/components" />
     </key>
   </component>
@@ -111,7 +111,13 @@
       <workItem from="1766821017302" duration="3259000" />
       <workItem from="1766857431151" duration="9870000" />
       <workItem from="1766907542618" duration="1232000" />
-      <workItem from="1766937491565" duration="4550000" />
+      <workItem from="1766937491565" duration="5182000" />
+      <workItem from="1766992247251" duration="116000" />
+      <workItem from="1767032656000" duration="1354000" />
+      <workItem from="1767076946359" duration="3614000" />
+      <workItem from="1767104965364" duration="1738000" />
+      <workItem from="1767116482182" duration="16000" />
+      <workItem from="1767177073242" duration="2887000" />
     </task>
     <servers />
   </component>
