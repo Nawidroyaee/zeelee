@@ -63,7 +63,7 @@ export default function Navbar() {
         <div className="hidden md:block">
           <a
             href="#menu"
-            className="rounded-full bg-green-500 px-5 py-2 text-white font-bold hover:bg-green-600 transition"
+            className="rounded-lg bg-green-500 px-5 py-2 text-white font-bold hover:bg-green-600 transition"
           >
             Order Now
           </a>

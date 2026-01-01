@@ -19,7 +19,7 @@ export default function HeroSection() {
             those who truly love food.
           </p>
           <a
-            className="px-5 py-2 bg-white text-green-500 rounded-full border-2 border-green-500 hover:bg-green-50 transition duration-300 font-bold"
+            className="px-5 py-2 bg-white text-green-500 rounded-lg border-2 border-green-500 hover:bg-green-50 transition duration-300 font-bold"
             href="#menu"
           >
             Check out our menu
