@@ -1,24 +1,5 @@
-import {
-  IconBrandWhatsapp,
-  IconPhone,
-  IconPhoneCall,
-  IconPhoneFilled,
-} from "@tabler/icons-react";
-
-interface Price {
-  prixMenu: string;
-  prixSeul: string;
-}
-
-export interface Props {
-  image: string;
-  title: string;
-  price: Price;
-  currency: string;
-  description: string;
-  whatsapp: string;
-  phone: string;
-}
+import { IconBrandWhatsapp, IconPhoneCall } from "@tabler/icons-react";
+import {Props} from "@/types/types";
 
 export default function MainCard({
   image,

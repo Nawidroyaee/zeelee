@@ -1,38 +1,8 @@
 import MainCard from "@/app/components/sections/menu/components/MainCard";
 import Assiette from "@/app/components/sections/menu/Assiette";
-
-const mainMealsData = [
-  {
-    image: "/kefta-ou-merquez.jpg",
-    title: "Kebab",
-    price: { prixMenu: "9.00", prixSeul: "7.00" },
-    currency: "€",
-    description:
-      "A shawarma like kebab served with chicken breast and beef meat",
-    whatsapp: "#",
-    phone: "#",
-  },
-  {
-    image: "/maxi-kebab.png",
-    title: "Fricadelle",
-    price: { prixMenu: "8.00", prixSeul: "6.00" },
-    currency: "€",
-    description:
-      "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
-  },
-  {
-    image: "/barbecue.jpg",
-    title: "Barbecue",
-    price: { prixMenu: "12.90", prixSeul: "10.90" },
-    currency: "€",
-    description:
-      "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
-  },
-];
+import { mainMealsData } from "@/data/data";
+import KebabSandwich from "@/app/components/sections/menu/KebabSandwich";
+import Galette from "@/app/components/sections/menu/Galette";
 
 export default function MenuSection() {
   return (
@@ -46,6 +16,8 @@ export default function MenuSection() {
         </div>
 
         <Assiette />
+        <KebabSandwich />
+        <Galette />
       </div>
     </section>
   );
