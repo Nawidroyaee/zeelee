@@ -34,12 +34,12 @@ export default function MainCard({
         <div className="flex flex-row items-center justify-center gap-5 mb-3">
           <div className="flex flex-col items-center justify-center gap-1">
             <p className="font-bold text-green-600">Prix Menu</p>
-            <p className="font-bold text-green-600">{`${currency} ${price.prixMenu}`}</p>
+            <p className="font-bold text-green-600">{`${currency} ${price.primary}`}</p>
           </div>
           <div className="h-10 w-px bg-gray-300"></div>
           <div className="flex flex-col items-center justify-center gap-1">
             <p className="font-bold text-gray-500">Prix Seul</p>
-            <p className="font-bold text-gray-500">{`${currency} ${price.prixSeul}`}</p>
+            <p className="font-bold text-gray-500">{`${currency} ${price.secondary}`}</p>
           </div>
         </div>
 
@@ -49,6 +49,9 @@ export default function MainCard({
 
         <div className="flex items-center gap-2">
           <a
+              aria-label={'Order on Whatsapp'}
+              target="_blank"
+              rel="noopener noreferrer"
             href={whatsapp}
             className="w-full py-2 px-2 bg-green-500 hover:bg-green-600 border-2 border-green-500 hover:border-green-600 text-white font-bold text-sm/0 rounded-lg hover:cursor-pointer transition-all duration-100"
           >
@@ -58,7 +61,8 @@ export default function MainCard({
             </div>
           </a>
           <a
-            href={phone}
+              aria-label={'Call us'}
+            href={`tel:${phone}`}
             className="py-2 px-2  bg-white text-gray-500 rounded-lg border border-gray-300 hover:cursor-pointer hover:bg-gray-100 transition duration-300 font-bold text-sm/0"
           >
             <div className="flex flex-row gap-1 items-center justify-center">

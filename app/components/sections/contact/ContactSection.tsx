@@ -1,13 +1,27 @@
 "use client";
 
+import React, {useState} from "react";
+
 export default function ContactSection() {
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log("form submitted");
-  }
+
+    const subject = encodeURIComponent("Contact from the site");
+    const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\n ${message}`
+    );
+
+    window.location.href = `mailto:hashimhanify@gmail.com?subject=${subject}&body=${body}`;
+  };
 
   return (
-    <section className="max-w-2xl mx-auto px-4 py-10">
+    <section id="contact" className="max-w-2xl mx-auto px-4 py-10">
       <h2 className="text-xl lg:text-3xl font-bold text-center mb-2">
         Contact Us
       </h2>
@@ -31,6 +45,8 @@ export default function ContactSection() {
             type="text"
             name="name"
             required
+            value={name}
+            onChange={(e) => setName(e.target.value)}
             maxLength={80}
             className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
@@ -44,6 +60,8 @@ export default function ContactSection() {
           <input
             type="email"
             name="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
             required
             className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
@@ -52,10 +70,13 @@ export default function ContactSection() {
         {/* Phone */}
         <div>
           <label className="block text-sm font-medium mb-1  text-gray-500">
-            Phone (optional)
+            Phone *
           </label>
           <input
             type="tel"
+            value={phone}
+            onChange={(e) => setPhone(e.target.value)}
+            required
             name="phone"
             className="w-full rounded-lg border border-gray-300 px-4 py-2 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />
@@ -70,6 +91,8 @@ export default function ContactSection() {
             name="message"
             required
             rows={5}
+            value={message}
+            onChange={(e) => setMessage(e.target.value)}
             maxLength={1000}
             className="w-full rounded-lg border border-gray-300 px-4 py-2 resize-none focus:ring-2 focus:ring-indigo-500 focus:outline-none"
           />

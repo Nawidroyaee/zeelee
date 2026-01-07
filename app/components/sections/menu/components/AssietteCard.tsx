@@ -44,8 +44,11 @@ export default function AssietteCard({
       <div className="absolute inset-x-0 bottom-0 translate-y-6 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300 ease-out bg-transparent p-2">
         <div className="flex gap-2 w-full">
           <a
+              aria-label={'Order on Whatsapp'}
+              target="_blank"
+              rel="noopener noreferrer"
             href={whatsapp}
-            className="w-full py-2 px-2 bg-green-500 hover:bg-green-600 border-2 border-green-500 hover:border-green-600 text-white font-bold text-sm/0 rounded-lg hover:cursor-pointer transition-all duration-100"
+            className="w-full py-2 px-2 bg-green-500 hover:bg-green-600 border border-green-500 hover:border-green-600 text-white font-bold text-sm/0 rounded-lg hover:cursor-pointer transition-all duration-100"
           >
             <div className="flex flex-row gap-1 items-center justify-center">
               <IconBrandWhatsapp size={20} />

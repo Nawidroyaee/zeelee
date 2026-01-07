@@ -1,40 +1,45 @@
+const phone = "93731111533";
+const message = encodeURIComponent(
+    "Bonjour, je souhaite commander ce plat 🍽️"
+);
+
 export const mainMealsData = [
   {
-    image: "/kefta-ou-merquez.jpg",
-    title: "Kebab",
-    price: { prixMenu: 9.0, prixSeul: 7.0 },
+    image: "/meals/grilled.png",
+    title: "Crème brûlée",
+    price: { primary: 9.0, secondary: 7.0 },
     currency: "€",
     description:
       "A shawarma like kebab served with chicken breast and beef meat",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     image: "/maxi-kebab.png",
     title: "Fricadelle",
-    price: { prixMenu: 8.0, prixSeul: 6.0 },
+    price: { primary: 8.0, secondary: 6.0 },
     currency: "€",
     description:
       "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     image: "/barbecue.jpg",
     title: "Barbecue",
-    price: { prixMenu: 12.9, prixSeul: 10.9 },
+    price: { primary: 12.9, secondary: 10.9 },
     currency: "€",
     description:
       "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
 ];
 
 export const assiettesMenu = [
   {
     title: "Boeuf, Poulet, Mix",
-    image: "/images/assiettes/boeuf-poulet-mix.png",
+    image: "/meals/grilled.png",
     price: {
       primary: 12,
       secondary: 11,
@@ -42,8 +47,8 @@ export const assiettesMenu = [
     currency: "€",
     description:
       "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Mexicanos",
@@ -55,8 +60,8 @@ export const assiettesMenu = [
     currency: "€",
     description:
       "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Brochette Dinde",
@@ -68,8 +73,8 @@ export const assiettesMenu = [
     currency: "€",
     description:
       "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Falafel",
@@ -81,8 +86,8 @@ export const assiettesMenu = [
     currency: "€",
     description:
       "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Grillade",
@@ -94,8 +99,8 @@ export const assiettesMenu = [
     currency: "€",
     description:
       "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Kefta",
@@ -107,8 +112,8 @@ export const assiettesMenu = [
     currency: "€",
     description:
       "A juicy chicken patty served on a bun with lettuce, tomato, and mayo.",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Merguez",
@@ -120,8 +125,8 @@ export const assiettesMenu = [
       secondary: 13,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Fricadelle",
@@ -133,8 +138,8 @@ export const assiettesMenu = [
       secondary: 11,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Steak",
@@ -146,8 +151,8 @@ export const assiettesMenu = [
       secondary: 13,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Sandwich Froid (Surimi, Thon)",
@@ -159,11 +164,11 @@ export const assiettesMenu = [
       secondary: 5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
-    title: "Burger",
+    title: "Burgers",
     image: "/images/assiettes/burger.png",
     description:
       "Juicy beef burger with cheese, salad, and sauce. Optional potato galette or double meat available.",
@@ -172,11 +177,11 @@ export const assiettesMenu = [
       secondary: 6.5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
-    title: "Panini (Au choix)",
+    title: "Paninis (Au choix)",
     image: "/images/assiettes/panini.png",
     description:
       "Grilled panini sandwich with your choice of filling, served hot and crispy.",
@@ -185,8 +190,8 @@ export const assiettesMenu = [
       secondary: 6,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Riz Afghan",
@@ -198,8 +203,8 @@ export const assiettesMenu = [
       secondary: 5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
 ];
 
@@ -210,12 +215,12 @@ export const kebabSandwichMenu = [
     description:
       "Classic kebab sandwich with shaved meat, fresh salad, and house sauce served in soft bread.",
     price: {
-      prixMenu: 9,
-      prixSeul: 7,
+      primary: 9,
+      secondary: 7,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Maxi Kebab",
@@ -223,12 +228,12 @@ export const kebabSandwichMenu = [
     description:
       "Extra-large kebab sandwich with generous meat portion, fresh vegetables, and creamy sauce.",
     price: {
-      prixMenu: 12.5,
-      prixSeul: 10.5,
+      primary: 12.5,
+      secondary: 10.5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Kefta ou Brochette, Merguez ou Steak",
@@ -236,12 +241,12 @@ export const kebabSandwichMenu = [
     description:
       "Sandwich of your choice: kefta, brochette, merguez, or steak, served with salad and sauce.",
     price: {
-      prixMenu: 9.5,
-      prixSeul: 7.5,
+      primary: 9.5,
+      secondary: 7.5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Maxi Kefta ou Brochette, Merguez ou Steak",
@@ -249,12 +254,12 @@ export const kebabSandwichMenu = [
     description:
       "Maxi-sized sandwich with your choice of kefta, brochette, merguez, or steak and fresh toppings.",
     price: {
-      prixMenu: 13,
-      prixSeul: 11,
+      primary: 13,
+      secondary: 11,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Falafel",
@@ -262,12 +267,12 @@ export const kebabSandwichMenu = [
     description:
       "Vegetarian falafel sandwich with crispy chickpea balls, salad, and creamy sauce.",
     price: {
-      prixMenu: 8,
-      prixSeul: 6,
+      primary: 8,
+      secondary: 6,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Fricadelle",
@@ -275,12 +280,12 @@ export const kebabSandwichMenu = [
     description:
       "Fricadelle sandwich with grilled sausage, fresh vegetables, and signature sauce.",
     price: {
-      prixMenu: 8.5,
-      prixSeul: 6.5,
+      primary: 8.5,
+      secondary: 6.5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+   whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Tacos",
@@ -288,12 +293,12 @@ export const kebabSandwichMenu = [
     description:
       "Grilled tacos filled with seasoned meat, melted cheese, and sauce. Second meat +1.50€.",
     price: {
-      prixMenu: 9.5,
-      prixSeul: 7.5,
+      primary: 9.5,
+      secondary: 7.5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
 ];
 
@@ -304,12 +309,12 @@ export const galetteMenu = [
     description:
       "Galette wrap filled with kebab meat, fresh salad, and house sauce.",
     price: {
-      prixMenu: 9.5,
-      prixSeul: 7.5,
+      primary: 9.5,
+      secondary: 7.5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Maxi Galette Kebab",
@@ -317,12 +322,12 @@ export const galetteMenu = [
     description:
       "Maxi-sized galette wrap with extra kebab meat, fresh vegetables, and sauce.",
     price: {
-      prixMenu: 13,
-      prixSeul: 11,
+      primary: 13,
+      secondary: 11,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Galette Kefta ou Brochette Poulet ou Merguez",
@@ -330,12 +335,12 @@ export const galetteMenu = [
     description:
       "Galette wrap with your choice of kefta, chicken brochette, or merguez, served with salad and sauce.",
     price: {
-      prixMenu: 10,
-      prixSeul: 8,
+      primary: 10,
+      secondary: 8,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Maxi Galette Kefta ou Brochette Poulet ou Merguez",
@@ -343,12 +348,12 @@ export const galetteMenu = [
     description:
       "Maxi galette wrap with your choice of kefta, chicken brochette, or merguez and generous filling.",
     price: {
-      prixMenu: 13.5,
-      prixSeul: 11.5,
+      primary: 13.5,
+      secondary: 11.5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Galette Falafel",
@@ -356,12 +361,12 @@ export const galetteMenu = [
     description:
       "Vegetarian galette wrap filled with crispy falafel, fresh salad, and creamy sauce.",
     price: {
-      prixMenu: 8.5,
-      prixSeul: 6.5,
+      primary: 8.5,
+      secondary: 6.5,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
   {
     title: "Galette Maxicanos ou Fricadelle",
@@ -369,11 +374,11 @@ export const galetteMenu = [
     description:
       "Galette wrap with your choice of maxicanos or fricadelle, served hot with salad and sauce.",
     price: {
-      prixMenu: 9,
-      prixSeul: 7,
+      primary: 9,
+      secondary: 7,
     },
     currency: "€",
-    whatsapp: "#",
-    phone: "#",
+    whatsapp: `https://wa.me/${phone}?text=${message}`,
+    phone,
   },
 ];
